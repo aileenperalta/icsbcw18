@@ -5,4 +5,4 @@
 ### Your Code Here ###
 # 2 or 3 leap years in a decade
 days = (10 * 365.25) * 24 * 60
-puts days.to_i.to_s + ' minutes'
+puts 'There are ' + days.to_i.to_s + ' minutes in a decade.'
