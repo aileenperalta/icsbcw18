@@ -5,3 +5,5 @@
 
 
 ### Your Code Here ###
+hours = 365.25 * 24
+puts hours.to_i.to_s + ' hours in a year'

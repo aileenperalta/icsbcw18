@@ -4,3 +4,7 @@
 
 
 ### Your Code Here ###
+puts 'What do you want!'
+answer=gets.chomp
+answer.to_s
+puts 'WHADDYA MEAN ' + answer.upcase + ' YOU\'RE FIRED!'
