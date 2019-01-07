@@ -1,8 +1,23 @@
 puts 'COME GIVE GRANNY A KISS!'
 
 bye_counter = 0
-while () # Fill in the while condition
+# i wasn't sure how to stop her from asking no, not since year after the third bye
+while true # Fill in the while condition
   ### Your Code Here ###
+    input = gets.chomp.to_s
+    if input == input.downcase
+      puts 'HUH?! SPEAK UP, SONNY!'
+    bye_counter = 0
+    elsif input != 'BYE'
+      year = rand(21) + 1930
+      puts 'NO, NOT SINCE ' + year.to_s
+    bye_counter = 0
+    end
+    if input == 'BYE'
+    bye_counter += 1
+      if bye_counter == 3
+        break
+      end
+  end
 end
-
 puts 'OK SONNY, TALK AGAIN SOON'
