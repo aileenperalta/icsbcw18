@@ -1,7 +1,7 @@
 puts 'COME GIVE GRANNY A KISS!'
 while true
   input = gets.chomp.to_s
-  if input == input.downcase
+  if input == input.downcase || input == input.capitalize
     puts 'HUH?! SPEAK UP, SONNY!'
   elsif input != 'BYE'
     year = rand(21) + 1930
