@@ -5,13 +5,12 @@ bye_counter = 0
 while true # Fill in the while condition
   ### Your Code Here ###
     input = gets.chomp.to_s
-    if input == input.downcase
-      puts 'HUH?! SPEAK UP, SONNY!'
-    bye_counter = 0
-    elsif input != 'BYE'
+    if input == input.upcase
       year = rand(21) + 1930
       puts 'NO, NOT SINCE ' + year.to_s
-    bye_counter = 0
+  else
+    puts 'HUH?! SPEAK UP, SONNY!'
+  bye_counter = 0
     end
     if input == 'BYE'
     bye_counter += 1
