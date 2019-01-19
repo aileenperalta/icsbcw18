@@ -3,11 +3,13 @@
 
 def count_array(array)
   count = 0
-
-
-  # FILL IN WITH YOUR CODE #
-
-
+  if array.is_a? Numeric
+    return count + 1
+  end
+    array.each do |hi|
+      count += count_array(hi)
+    end
+    count
 end
 
-puts(count_array([[2, 4, 6], 8, [10, 12, [14, 16]]])) # expected: 8
+puts(count_array([[2, 4, 6], 8, [10, 12, [14, 16]]]))
